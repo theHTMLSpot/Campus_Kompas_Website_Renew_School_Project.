@@ -69,18 +69,56 @@ export default function Home() {
               Pull News from backend and display here
             </div>
             <div>
-              <h2 className="font-bold text-amber-500"> Afspraak Maken</h2>
-              <div className={"w-full h-16 flex-col items-center"}>
-                <h2 className="font-bold">Personeel</h2>
-                <Image
-                  src={"/download (13).jpeg"}
-                  alt={"afspraak maken"}
-                  width={300}
-                  height={300}
-                />
+              <h2 className="font-bold text-amber-500 "> Afspraak Maken</h2>
+              <div className="w-full rounded-lg border-2 border-amber-500 p-6 hover:bg-amber-50 transition bg-white shadow-md flex flex-col items-center justify-center text-center">
+                <a href="/afspraak-maken-leerkracht">
+                  <h3 className="font-bold text-lg text-amber-700 mb-2">
+                    Afspraak met een Leerkracht
+                  </h3>
+                  <p className="text-zinc-700">
+                    Maak gemakkelijk een afspraak met je leerkracht voor
+                    begeleiding, vragen of ondersteuning.
+                  </p>
+                  <Image
+                    src={"/download (13).jpeg"}
+                    alt={"afspraak maken"}
+                    width={300}
+                    height={300}
+                  />
+                </a>
               </div>
-              <div> Broodje </div>
-              <div> Studio Kompas </div>
+              <div className="mt-4 grid grid-cols-1 gap-3">
+                <a
+                  href="/broodjesdienst"
+                  className="rounded-lg border-2 border-amber-500 p-4 hover:bg-amber-50 transition bg-white shadow-md flex flex-col items-center justify-center text-center"
+                >
+                  <h3 className="font-bold text-amber-700">Broodje</h3>
+                  <p className="text-sm text-zinc-700">
+                    Lekker eten in onze kantine
+                  </p>
+                  <Image
+                    src={"/stream.jpeg"}
+                    alt={"afspraak maken"}
+                    width={300}
+                    height={300}
+                  />
+                </a>
+                <a
+                  href="https://booking.optios.net/11608/select-location"
+                  className="rounded-lg border-2 border-amber-500 p-4 hover:bg-amber-50 transition bg-white shadow-md flex flex-col items-center justify-center text-center"
+                >
+                  <h3 className="font-bold text-amber-700">Studio Kompas</h3>
+                  <p className="text-sm text-zinc-700">
+                    Creativiteit en persoonlijke expressie
+                  </p>
+                  <Image
+                    src={"/stream (1).jpeg"}
+                    alt={"afspraak maken"}
+                    width={300}
+                    height={300}
+                  />
+                </a>
+              </div>
             </div>
             <div>
               <h2 className="font-bold text-amber-500">
